@@ -1,2 +1,2 @@
 # MEE342Shaft
-Force and Moment/Torque Analysis for Shafts and Listed Diameters
+Force and Moment/Torque Analysis and Plots for Shafts
