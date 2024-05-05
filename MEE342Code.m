@@ -35,7 +35,7 @@ figure(4)
 plot(LengthIMY, MomentIY)
 figure(5)
 plot(LengthIT, TorqueI)
-% Diameters of Input Shaft
+% Diameters and Fillets of Input Shaft
 d1i = 2.82; %in
 d2i = d1i*1.2; d4i = d2i; %in * fixed ratio between diameters
 d3i = d2i*1.2; %in
@@ -66,10 +66,12 @@ figure(9)
 plot(LengthMM, MomentMY)
 figure(10)
 plot(LengthMT, TorqueM)
-% Diameters for Intermediate Shaft
+% Diameters and Fillets for Intermediate Shaft
 dim = 0.45; d5m = d1m; %in * diameter slightly increased for improving fatigue and yielding safety factors
 d2m = d1m*1.2; d4m = d2m; %in * fixed ratio between diameters
 d3m = d2m*1.2; %in
+Rfm1 = d1m/10; %in * fixed ratios between diameters d1 - d2 and d4 - d5
+Rfm2 = d2m/10; %in * fixed ratios between diameters d2 - d3 and d3 - d4
 %% Output Shaft
 % Lengths
 L1o = 2; L1fo = 0.25; L2o = 0.43; L2fo = 0.75; L3o = 0.55; L3fo = 0.5; L4o = 0.43;
@@ -96,7 +98,8 @@ figure(14)
 plot(LengthOM, MomentOY)
 figure(15)
 plot(LengthOT, TorqueO)
-% Diameters of Outer Shaft
+% Diameters and Fillets of Outer Shaft
 d2o = 3.33; d4o = d2o; % in
 d3o = 3.52; %in
-d1o = 3.097; %in
+d1o = 3.097; d5o = d1o; %in
+Rfo = d1o/10; %in * fixed ratio between diameters d2-d3 and d3-d4
